@@ -1,0 +1,609 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ClashDisplay-Medium;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  width: 1440px;
+  height: 100%;
+  margin: auto;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url('../src/assets/Images/Bg.png') 100% 100% repeat;
+  mix-blend-mode: soft-light;
+}
+
+.main_screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 1rem 6rem;
+}
+
+@font-face {
+  font-family: ClashDisplay-Bold;
+  src: url(./assets/fonts/ClashDisplay-Bold.woff);
+}
+
+@font-face {
+  font-family: ClashDisplay-Extralight;
+  src: url(./assets/fonts/ClashDisplay-Extralight.woff);
+}
+
+@font-face {
+  font-family: ClashDisplay-Light;
+  src: url(./assets/fonts/ClashDisplay-Light.woff);
+}
+
+@font-face {
+  font-family: ClashDisplay-Medium;
+  src: url(./assets/fonts/ClashDisplay-Medium.woff);
+}
+
+@font-face {
+  font-family: ClashDisplay-Semibold;
+  src: url(./assets/fonts/ClashDisplay-Semibold.woff);
+}
+
+@font-face {
+  font-family: ClashDisplay-Variable;
+  src: url(./assets/fonts/ClashDisplay-Variable.woff);
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: ClashDisplay-Light;
+}
+
+.btn {
+  width: 11.25rem;
+  height: 3.75rem;
+  border-radius: 0.25rem;
+  background: #000;
+  color: #fff;
+  font-family: ClashDisplay-Light;
+  font-size: 1.125rem;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border: 2px solid #F55;
+}
+
+
+/* Navbar */
+nav {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin-top: 3.5px;
+}
+
+nav .active a {
+  font-weight: 700;
+  color: #F55;
+}
+
+nav .nav-link {
+  color: #000;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+nav .nav-link:hover {
+  color: #F55;
+}
+
+/* Hero */
+.main_content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.main_content h1 {
+  text-transform: capitalize;
+  color: #000;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.main_content p {
+  font-family: ClashDisplay-Medium;
+}
+
+.main_content button {
+  width: 11.25rem;
+  height: 3.75rem;
+  border-radius: 0.25rem;
+  background: #000;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+}
+
+figure .Gradient {
+  position: absolute;
+  z-index: -1;
+  top: -14rem;
+}
+
+.hero {
+  position: relative;
+}
+
+figure .ring {
+  margin-top: -12rem;
+  margin-left: 4rem;
+  /* width: 90%; */
+}
+
+figure .phone {
+  position: absolute;
+  top: -10rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.features_img .iphone,
+.advantages .iphone,
+.fully_customizable .iphone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+}
+
+/* features */
+.features_img {
+  position: relative;
+}
+
+.features_img .ring {
+  margin-left: -3rem;
+  padding-top: 8rem;
+}
+
+.features_img .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.features_img .black_star {
+  position: absolute;
+}
+
+
+.features_content {
+  position: relative;
+}
+
+h5 {
+  color: #F55;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.18rem;
+}
+
+.features_content h2,
+.advantage_content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.features_content p {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.features_sub__points .sub_heading {
+  position: relative;
+  width: min-content;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.features_sub__points .headings h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.features_sub__points p {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+}
+
+
+/* Advantages */
+.advantages {
+  position: relative;
+  width: 100%;
+}
+
+.advantages .star {
+  position: absolute;
+}
+
+.advantages .gradient {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  transform: rotate(220deg);
+  z-index: -1;
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+}
+
+.advantages .row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage_content p {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+  margin-top: 1rem;
+}
+
+
+/* fully customizable */
+.fully_customizable {
+  position: relative;
+}
+
+.fully_customizable .Blackstar {
+  position: absolute;
+}
+
+.fully_customizable .Blackstar2 {
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+}
+
+.fully_customizable .gradient {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.fully_customizable p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+/* testimonial */
+.testimonial {
+  position: relative;
+}
+
+.testimonial .Gradient {
+  position: absolute;
+  top: 14rem;
+  left: 0;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.testimonial .heading h2 {
+  font-weight: 700;
+}
+
+.peoples p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Frequently asked questions */
+.faq {
+  position: relative;
+}
+
+.faq .star {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+.faq h1 {
+  font-family: ClashDisplay-Bold;
+}
+
+.faq_grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.faq_grid .orange {
+  width: 33.4375rem;
+  height: 11.3125rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  background: #F55;
+  padding: 1.6rem;
+  text-align: left;
+}
+
+.faq_grid .white {
+  width: 33.4375rem;
+  height: 11.3125rem;
+  color: #232323;
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+  text-align: left;
+}
+
+/* Subscribe */
+.sub {
+  width: 100%;
+  height: 31.75rem;
+  position: relative;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  border-radius: 0.5rem;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub .star {
+  position: absolute;
+  top: -4rem;
+  left: 100%;
+  width: 3rem;
+  z-index: -1;
+}
+
+.sub .star2 {
+  position: absolute;
+  top: 8rem;
+  left: -4rem;
+}
+
+.sub .WhiteStar {
+  position: absolute;
+  top: 10%;
+  left: 56%;
+}
+
+.sub .WhiteStar2 {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+}
+
+.sub .gradient2 {
+  position: absolute;
+  top: -10rem;
+  left: -14rem;
+  z-index: -1;
+  transform: rotate(240deg);
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+}
+
+.sub p {
+  opacity: 0.8;
+}
+
+.apple {
+  position: relative;
+  width: 13rem;
+}
+
+.apple img {
+  position: absolute;
+  right: 2.2rem;
+  top: .8rem;
+}
+
+.sub .btn {
+  background: #fff;
+  color: #000;
+  padding-right: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sub .btn:hover {
+  background: #232323;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.sub .ring {
+  position: absolute;
+  left: 0;
+  bottom: .02rem;
+}
+
+.img_Grp {
+  position: relative;
+}
+
+.img_Grp .gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.img_Grp .phone {
+  position: relative;
+  margin-top: -4.2rem;
+  margin-left: 4.7rem;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  color: #232323;
+}
+
+footer a {
+  color: #232323;
+}
+
+.contact {
+  position: relative;
+  gap: 1rem;
+}
+
+footer form {
+  position: relative;
+}
+
+form input {
+  border: none;
+  padding-left: 1.2rem;
+}
+
+/* Bottom-To-Top */
+/* BackToTopButton.css */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #F55;
+  color: white;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 5rem;
+  font-size: 18px;
+}
+
+.back-to-top:hover {
+  background-color: #333;
+}
+
+/* gradient */
+.main_screen .gradient1 {
+  position: absolute;
+  top: 0;
+  left: 12rem;
+  z-index: -1;
+  width: 30%;
+}
+
+.star1 {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  z-index: -1;
+}
+
+.star2 {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(45deg);
+}
+
+.star3 {
+  position: absolute;
+  top: 32rem;
+  left: 16rem;
+  transform: rotate(45deg);
+  width: 3rem;
+}
+
+.star4 {
+  position: absolute;
+  top: 42rem;
+  left: 56rem;
+  transform: rotate(45deg);
+  width: 3rem;
+}
+
+.copyrite hr {
+  border-radius: 5rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 720px) {
+  body {
+    width: 414px;
+  }
+
+  nav .btn {
+    display: none;
+  }
+
+  .faq_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
