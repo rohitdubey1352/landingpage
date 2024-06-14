@@ -2,6 +2,8 @@
 
 After downloading this project, user need to install the packages.
 Use this command:
+
+
 **cd project name**
 **npm install**
 **npm init**
