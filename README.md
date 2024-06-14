@@ -19,6 +19,9 @@ I had build the landing page using HTML, CSS, Bootstrap, Javascript & React js.
 I have used react for better user performance and make the website works fast, with that I had used components to add in the main file.
 
 
+I used props to try Don't Repeat yourself method and make the use of react in it.
+
+
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
