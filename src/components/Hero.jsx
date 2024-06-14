@@ -55,8 +55,8 @@ const Hero = () => {
                     Watch Video
                   </a>
                 </div>
-                <div className="LetterA">
-                  <img src={LetterA} alt="letterA" />
+                <div>
+                  <img src={LetterA} className="LetterA" alt="letterA" />
                 </div>
               </div>
             </div>

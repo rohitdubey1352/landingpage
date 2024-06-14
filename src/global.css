@@ -168,6 +168,11 @@ figure .Gradient {
   position: relative;
 }
 
+.hero .LetterA {
+  position: relative;
+  width: 100%;
+}
+
 figure .ring {
   margin-top: -12rem;
   margin-left: 4rem;
@@ -194,6 +199,10 @@ figure .phone {
 }
 
 /* features */
+.features .row {
+  position: relative;
+}
+
 .features_img {
   position: relative;
 }
@@ -344,6 +353,10 @@ h5 {
   font-weight: 700;
 }
 
+.testimonial .peoples {
+  position: relative;
+}
+
 .peoples p {
   font-size: 1.125rem;
   font-weight: 600;
@@ -479,17 +492,17 @@ h5 {
   bottom: .02rem;
 }
 
-.img_Grp {
+.sub .img_Grp {
   position: relative;
 }
 
-.img_Grp .gradient {
+.sub .img_Grp .gradient {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.img_Grp .phone {
+.sub .img_Grp .phone {
   position: relative;
   margin-top: -4.2rem;
   margin-left: 4.7rem;
@@ -596,7 +609,16 @@ form input {
 /* Responsiveness */
 @media screen and (max-width: 720px) {
   body {
-    width: 414px;
+    width: 100%;
+  }
+
+  .main_screen {
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .btn {
+    width: 100%;
   }
 
   nav .btn {
@@ -606,4 +628,88 @@ form input {
   .faq_grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .star4,
+  .fully_customizable .Blackstar2,
+  .img_grp,
+  .img_Grp .gradient {
+    display: none;
+  }
+
+  .advantages .star,
+  .fully_customizable .Blackstar,
+  .sub .star {
+    left: 20rem;
+  }
+
+  /* Hero */
+  .main_content h1 {
+    font-size: 2rem;
+  }
+
+  .main_content .buttons {
+    display: flex;
+  }
+
+  .buttons .watch_now {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Features */
+  .features .row {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: .2rem 0 6rem 0;
+  }
+
+  .features_img .gradient,
+  .advantages .gradient,
+  .fully_customizable .gradient {
+    left: -6rem;
+  }
+
+  .features_img .iphone,
+  .advantages .iphone,
+  .fully_customizable .iphone {
+    left: 0;
+  }
+
+  .testimonial .peoples,
+  .faq_grid .orange,
+  .faq_grid .white,
+  footer form,
+  .features_img .gradient,
+  .features_img .iphone,
+  .advantages .gradient,
+  .fully_customizable .gradient {
+    width: 100%;
+  }
+
+  .testimonial .Gradient {
+    width: 100%;
+    top: 15%;
+  }
+
+  .sub .img_Grp .phone {
+    margin-top: -1rem;
+    margin-left: 3rem;
+  }
+
+  .back-to-top {
+    right: 80%;
+  }
+
+  .fully_customizable .row {
+    flex-direction: column-reverse;
+    padding-bottom: 10rem;
+  }
+
+  footer .row,
+  footer .contact {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
 }
